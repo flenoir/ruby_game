@@ -1,17 +1,18 @@
 
 class Player                     #création de la class player
+
+attr_reader :x, :y				#creation automatique des accesseurs
+
 	def initialize(x, y) 		 #initialiation de la classe
-		@coordx = x
-		@coordy = y
+		@x = x
+		@y = y
 	end
 
-	def x						#création des accesseurs de la classe
-		return @coordx
-	end
+	# def x						#création des accesseurs de la classe qui retourne la valeur
+	#	return @x
+	# end
 
-	def y
-		return @coordy			#création des accesseurs de la classe
-	end
+	
 end
 
 player = Player.new(4,6)		#création de l'occurence de la classe
